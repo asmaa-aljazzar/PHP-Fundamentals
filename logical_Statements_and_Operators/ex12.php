@@ -5,4 +5,13 @@ foreach ($grades as $grade) {
     $result += $grade;
 }
 $result /= count ($grades);
-echo $result;
+if ($result < 60)
+    echo "F";
+else if ($result < 70)
+    echo "D";
+else if ($result < 80)
+    echo "C";
+else if ($result < 90)
+    echo "B";
+else
+    echo "A";
