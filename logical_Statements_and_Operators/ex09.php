@@ -5,11 +5,11 @@ $op = $_POST["op"];
 if ($op == "+")
     echo "sum" . ($num1 + $num2);
 if ($op == "-")
-    echo "sub" . ($num1 + $num2);
+    echo "sub" . ($num1 - $num2);
 if ($op == "*")
-    echo "mult" . ($num1 + $num2);
+    echo "mult" . ($num1 * $num2);
 if ($op == "/")
-    echo "div" . ($num1 + $num2);
+    echo "div" . ($num1 / $num2);
 
 ?>
 
@@ -28,7 +28,7 @@ if ($op == "/")
         <label for="temp">Enter the 2nd number</label>
         <input type="number" id="num2" name="num2" value="<?php echo $num2 ?>" />
         <label for="temp">Enter the operation</label>
-        <input type="number" id="op" name="op" value="<?php echo $op ?>" />
+        <input type="text" id="op" name="op" value="<?php echo $op ?>" />
         <button type="submit">Submit</button>
     </form>
 </body>
